@@ -272,10 +272,10 @@
         opacity: 0.8;
         visibility: visible;
         }
-        .head{
-					background: #211316;
-					color: #fff;
-				}
+        /* .head{
+			background: #211316;
+			color: #fff;
+		} */
     </style>
     </head>
     <body>
@@ -284,7 +284,6 @@
         <nav id="nav">
             <ul class="main">
 				<img src="public\images\taskinglogo.png" alt="PN Logo" width="80%" height="40%" id="logo" style="margin-top: -100%;"><br>
-                <p style="font-size: 2em; color: #fff;">Hello!</p>
                 <li><a href="#">Current Tasking</a></li>
                 <li><a href="#">Shuffle Tasking</a></li>
                 <li><a href="#">Violations</a></li>
@@ -300,74 +299,985 @@
          	    $('#nav').toggleClass('show');
             });
         </script>
-
         <style>
-            .def {
-                text-align: justify;
+            p {
+                border: 1px solid #000;
+                text-align: center;
             }
-            
         </style>
-		<div class="container table-responsive" style="margin-top: 5%; margin-bottom: 5%; margin-left: 20%; width: 75%;">
-            <table class="table table-sm table-bordered table-striped">
-                <center><h3 style="margin-bottom: 3%;">Task Record</h3></center>
+        <center><h3 style="margin-bottom: 3%; margin-top: 5%;">Task Record</h3></center>
+        <div class="container" style="position: fixed; margin-left: 12%; width: 10%;">
+            <h5 style="text-align: center;">LEGEND</h5><br>
+                <p style="background-color: #e6f2ff;">Kitchen</p>
+                <p style="background-color: #ccffff;">Dishwashing</p>
+                <p style="background-color: #d9f2d9;">Dining</p>
+                <p style="background-color: #f0e6ff;">Courtyard & Stage</p>
+                <p style="background-color: #ffe6ff;">Hallways & Stairs</p>
+                <p style="background-color: #e6ffcc;">Front Garden</p>
+                <p style="background-color: #f2d9d9;">Back Garden</p>
+                <p style="background-color: #fff;">Window 1</p>
+                <p style="background-color: #d9d9d9;">Window 2</p>
+                <p style="background-color: #e6e6ff;">Comlab</p>
+                <p style="background-color: #ffe6cc;">Laundry Area</p>
+                <p style="background-color: #ecc6d9;">Office</p>
+            </table>
+        </div>
+        <div class="container table-responsive" style="margin-bottom: 5%; width: 100%; padding-left: 10%;">
+            <!-- <div class="container">
+                dfdf
+            </div> -->
+            <table class="table table-sm table-bordered">
+                
                 <!-- <ul class="main">
                         <li><a href="#">Task Count</a></li>
                         <li><a href="#">Coordinator</a></li>
                     </ul> -->
-                <thead class="head">
+                <thead class="head" style="text-align: center;">
                         <tr>
-                            <th style="width: 10%;">Student</th>
-                            <th style="width: 70%;">Definition</th>
+                            <th style="width: 3%;">#</th>
+                            <th style="width: 15%;">Student</th>
+                            <th style="width: 5.75%; background-color: #e6f2ff;">A</th>
+                            <th style="width: 5.75%; background-color: #ccffff;">B</th>
+                            <th style="width: 5.75%; background-color: #d9f2d9;">C</th>
+                            <th style="width: 5.75%; background-color: #f0e6ff;">D</th>
+                            <th style="width: 5.75%; background-color: #ffe6ff;">E</th>
+                            <th style="width: 5.75%; background-color: #e6ffcc;">F</th>
+                            <th style="width: 5.75%; background-color: #f2d9d9;">G</th>
+                            <th style="width: 5.75%; background-color: #fff;">H</th>
+                            <th style="width: 5.75%; background-color: #d9d9d9;">I</th>
+                            <th style="width: 5.75%; background-color: #e6e6ff;">J</th>
+                            <th style="width: 5.75%; background-color: #ffe6cc;">K</th>
+                            <th style="width: 5.75%; background-color: #ecc6d9;">L</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
+                            <td>1</td>
                             <td>Acenas</td>
-                            <td class="def">.</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
                         </tr>
                         <tr>
+                            <td>2</td>
                             <td>Albonida</td>
-                            <td class="def">.</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
                         </tr>
                         <tr>
+                            <td>3</td> 
                             <td>Alingasa</td>
-                            <td class="def">.</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
                         </tr>
                         <tr>
+                            <td>4</td>
                             <td>Alivio</td>
-                            <td class="def">.</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
                         </tr>
                         <tr>
+                            <td>5</td>
                             <td>Alvarado</td>
-                            <td class="def">.</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
                         </tr>
                         <tr>
+                            <td>6</td>
                             <td>Antig</td>
-                            <td class="def">.</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
                         </tr>
                         <tr>
+                            <td>7</td>
                             <td>Anunciacion</td>
-                            <td class="def">.</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
                         </tr>
                         <tr>
+                            <td>8</td>
                             <td>Araneta</td>
-                            <td class="def">.</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
                         </tr>
                         <tr>
+                            <td>9</td>
                             <td>Astillero</td>
-                            <td class="def">.</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
                         </tr>
                         <tr>
+                            <td>10</td>
                             <td>Bandalan</td>
-                            <td class="def">.</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
                         </tr>
                         <tr>
+                            <td>11</td>
                             <td>Bautista</td>
-                            <td class="def">.</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
                         </tr>
                         <tr>
+                            <td>12</td>
                             <td>Boiser</td>
-                            <td class="def">.</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Bontilao</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>14</td>
+                            <td>Carabuena</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>15</td>
+                            <td>Clamonte</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>16</td>
+                            <td>Custodio</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>Ebarita</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>18</td>
+                            <td>Epilan</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>19</td>
+                            <td>Escaño</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>Fulquirinas</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>21</td>
+                            <td>Goyo</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>22</td>
+                            <td>Iglisia</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>23</td>
+                            <td>Jimenez</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>24</td>
+                            <td>Labiste</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>25</td>
+                            <td>Lugod</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>26</td>
+                            <td>Lusares</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>Magalin</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>28</td>
+                            <td>Mancao</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>29</td>
+                            <td>Mansueto</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>30</td>
+                            <td>Mañus</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>31</td>
+                            <td>Mariñas</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>32</td>
+                            <td>Menoras</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>33</td>
+                            <td>Moyon</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>34</td>
+                            <td>Olmilla</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>35</td>
+                            <td>Opora</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>36</td>
+                            <td>Pasa-an</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>37</td>
+                            <td>Pepito</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>38</td>
+                            <td>Potrido</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>39</td>
+                            <td>Purisima</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>40</td>
+                            <td>Quimco</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>41</td>
+                            <td>Raboy</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>42</td>
+                            <td>Repuela</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>43</td>
+                            <td>Requinto</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>44</td>
+                            <td>Rivera</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>45</td>
+                            <td>Roble</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>46</td>
+                            <td>Rondina</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>47</td>
+                            <td>Rosales</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>48</td>
+                            <td>Sadili</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>49</td>
+                            <td>Song</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>50</td>
+                            <td>Sumagang</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>51</td>
+                            <td>Tagactac</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>52</td>
+                            <td>Tariao</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>53</td>
+                            <td>Tomaquin</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>54</td>
+                            <td>Vales</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>55</td>
+                            <td>Valles</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>56</td>
+                            <td>Vergara</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>57</td>
+                            <td>Yagonia</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
+                        </tr>
+                        <tr>
+                            <td>58</td>
+                            <td>Yrauda</td>
+                            <td style="background-color: #e6f2ff;">0</td>
+                            <td style="background-color: #ccffff;">0</td>
+                            <td style="background-color: #d9f2d9;">0</td>
+                            <td style="background-color: #f0e6ff;">0</td>
+                            <td style="background-color: #ffe6ff;">0</td>
+                            <td style="background-color: #e6ffcc;">0</td>
+                            <td style="background-color: #f2d9d9;">0</td>
+                            <td style="background-color: #fff;">0</td>
+                            <td style="background-color: #d9d9d9;">0</td>
+                            <td style="background-color: #e6e6ff;">0</td>
+                            <td style="background-color: #ffe6cc;">0</td>
+                            <td style="background-color: #ecc6d9;">0</td>
                         </tr>
                     
                         

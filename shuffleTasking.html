@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Center Tasks</title>
+      <title>Shuffle Tasking</title>
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -210,6 +210,19 @@
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
         }
+        /* SUB MENUS */
+        #nav ul.main li a.sub {
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: none;
+        font-size: 0.85rem;
+        display: block;
+        padding: 1px 0;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        }
         #nav ul.main li a span {
         color: #b7ac7f;
         }
@@ -273,9 +286,35 @@
         visibility: visible;
         }
         .head{
-					background: #211316;
-					color: #fff;
-				}
+			background: #211316;
+			color: #fff;
+		}
+        .nav-text {
+            position: relative;
+            display: table-cell;
+            transition: all 0.6s ease;
+            /* vertical-align: middle; */
+            /* width: 190px; */
+            /* font-family: 'courier', sans-serif; */
+        }
+        .fa {
+            position: relative;
+            display: table-cell;
+            /* width: 60px; */
+            /* height: 36px; */
+            /* text-align: center; */
+            /* vertical-align: middle; */
+            /* font-size: 20px; */
+        }
+        li.has-subnav ul {
+            display: none;
+        }
+        li.has-subnav:hover ul {
+            display: block;
+        }
+        .sub {
+            font-size: 0.50rem;
+        }
     </style>
     </head>
     <body>
@@ -284,12 +323,25 @@
         <nav id="nav">
             <ul class="main">
 				<img src="public\images\taskinglogo.png" alt="PN Logo" width="80%" height="40%" id="logo" style="margin-top: -60%;"><br>
-                <!-- <p style="font-size: 2em; color: #fff;">Hello!</p> -->
                 <li><a href="#">Current Tasking</a></li>
-                <li><a href="#">Shuffle Tasking</a></li>
+                <li class="has-subnav">
+                    <!-- <a href="#"><i class="fa fa-file-text-o fa-2x"></i> -->
+                    <a class="nav-text">Shuffle Tasking</a>
+                    <ul>
+                       <li><a href="#" class="sub">Normal</a></li>
+                       <li><a href="#" class="sub">Abnormal</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Violations</a></li>
-				<li><a href="#" style="color: #b7ac7f;">Center Tasks</a></li>
-				<li><a href="#">View Records</a></li>
+				<li><a href="#">Center Tasks</a></li>
+				<li class="has-subnav">
+                    <!-- <a href="#"><i class="fa fa-file-text-o fa-2x"></i> -->
+                    <a class="nav-text">View Records</a>
+                    <ul>
+                       <li><a href="#" class="sub">Task Record</a></li>
+                       <li><a href="#" class="sub">Coordinatorship</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Logout</a></li>
             </ul>
         </nav>
@@ -308,7 +360,7 @@
         </style>
 		<div class="container table-responsive" style="margin-top: 5%; margin-bottom: 5%;">
 			<table class="table table table-bordered table-striped">
-                <center><h3 style="margin-bottom: 3%;">Center Tasks</h3></center>
+                <center><h3 style="margin-bottom: 3%;">Shuffle Tasking</h3></center>
                 <thead class="head">
                         <tr>
                             <th style="width: 30%;">Task</th>
@@ -316,55 +368,6 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>Kitchen</td>
-                            <td class="def">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        </tr>
-                        <tr>
-                            <td>Dishwashing</td>
-                            <td class="def">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        </tr>
-                        <tr>
-                            <td>Dining</td>
-                            <td class="def">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        </tr>
-                        <tr>
-                            <td>Courtyard & Stage</td>
-                            <td class="def">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        </tr>
-                        <tr>
-                            <td>Hallways & Stairs</td>
-                            <td class="def">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        </tr>
-                        <tr>
-                            <td>Front Garden</td>
-                            <td class="def">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        </tr>
-                        <tr>
-                            <td>Back Garden</td>
-                            <td class="def">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        </tr>
-                        <tr>
-                            <td>Window 1</td>
-                            <td class="def">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        </tr>
-                        <tr>
-                            <td>Window 2</td>
-                            <td class="def">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        </tr>
-                        <tr>
-                            <td>Comlab</td>
-                            <td class="def">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        </tr>
-                        <tr>
-                            <td>Laundry Area</td>
-                            <td class="def">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        </tr>
-                        <tr>
-                            <td>Office</td>
-                            <td class="def">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td>
-                        </tr>
-                    
                         
                     </tbody>
                 </table>
