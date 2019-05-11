@@ -92,8 +92,7 @@
         .menu:hover {
         cursor: pointer;
         }
-        /*  NAV
-        ========================================== */
+        /*  NAV   */
         #nav {
         background: #211316;
         position: fixed;
@@ -210,6 +209,19 @@
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
         }
+        /* SUB MENUS */
+        #nav ul.main li a.sub {
+        color: #ffffff;
+        text-decoration: none;
+        text-transform: none;
+        font-size: 0.90rem;
+        display: block;
+        padding: 1px 0;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        }
         #nav ul.main li a span {
         color: #b7ac7f;
         }
@@ -273,25 +285,64 @@
         visibility: visible;
         }
         .head{
-					background: #211316;
-					color: #fff;
-				}
+			background: #211316;
+			color: #fff;
+		}
+        .nav-text {
+            position: relative;
+            display: table-cell;
+            transition: all 0.6s ease;
+            /* vertical-align: middle; */
+            /* width: 190px; */
+            /* font-family: 'courier', sans-serif; */
+        }
+        .fa {
+            position: relative;
+            display: table-cell;
+            /* width: 60px; */
+            /* height: 36px; */
+            /* text-align: center; */
+            /* vertical-align: middle; */
+            /* font-size: 20px; */
+        }
+        li.has-subnav ul {
+            display: none;
+        }
+        li.has-subnav:hover ul {
+            display: block;
+        }
+        .sub {
+            font-size: 0.50rem;
+        }
     </style>
     </head>
     <body>
         <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet"> -->
         <div class="menu"> <span></span> </div>
         <nav id="nav">
-            <ul class="main">
-								<img src="public\images\taskinglogo.png" alt="PN Logo" width="80%" height="40%" id="logo" style="margin-top: -100%;"><br>
-                <p style="font-size: 2em; color: #fff;">Hello!</p>
-                <li><a href="#" style="color: #b7ac7f;">Current Tasking</a></li>
-                <li><a href="#">Shuffle Tasking</a></li>
-								<li><a href="#">Violations</a></li>
-								<li><a href="#">Center Tasks</a></li>
-								<li><a href="#">View Records</a></li>
-                <li><a href="#">Logout</a></li>
-            </ul>
+          <ul class="main">
+          <img src="public\images\taskinglogo.png" alt="PN Logo" width="80%" height="40%" id="logo" style="margin-top: -60%;"><br>
+                  <li><a href="#">Current Tasking</a></li>
+                  <li class="has-subnav">
+                      <!-- <a href="#"><i class="fa fa-file-text-o fa-2x"></i> -->
+                      <a class="nav-text">Shuffle Tasking</a>
+                      <ul>
+                         <li><a href="#" class="sub">Normal</a></li>
+                         <li><a href="#" class="sub">Abnormal</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">Violations</a></li>
+          <li><a href="#">Center Tasks</a></li>
+          <li class="has-subnav">
+                      <!-- <a href="#"><i class="fa fa-file-text-o fa-2x"></i> -->
+                      <a class="nav-text">View Records</a>
+                      <ul>
+                         <li><a href="#" class="sub">Task Record</a></li>
+                         <li><a href="#" class="sub">Coordinatorship</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="#">Logout</a></li>
+              </ul>
         </nav>
         <div class="overlay"></div>
         <script>
