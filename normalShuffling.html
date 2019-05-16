@@ -317,9 +317,20 @@
          height: 29px;
          overflow: hidden;
          }
+         .preloader {
+            top: 0;
+            left: 0;
+            width: 100px;
+	         height: 100px;
+	         position: absolute;
+	         bottom: 0;
+	         right: 0;
+	         margin: auto;
+         }
       </style>
    </head>
    <body>
+      <div class="preloader"><img src="./public/images/preloader.gif"></div>
       <div class="menu"> <span></span> </div>
       <nav id="nav">
          <ul class="main">
@@ -352,24 +363,38 @@
          });
          
          $(document).ready(function(){
+            // $(window).load(function(){
+            //    $(".preloader").fadeOut('slow');
+            // });
+             
+             $(".preloader").hide();
              $("#download").hide();
+             $("#teybol").hide();
              $("#shuffle").click(function(){
-                 $("#download").show();
+                 $(".preloader").show();
+                 $(".preloader").delay(2000);
+                 $(".preloader").fadeOut(function(){
+                     $("#teybol").show();
+                     $("#download").show();
+                     $("#shuffle").disable();
+                 });
+                 
+               //   $("#download").show();
              });
              $("#download").click(function(){
-                 location.reload();
+                 window.print();
              });
          });
       </script>
       <div class="container table-responsive" style="margin-top: 5%; margin-bottom: 5%;">
-         <table class="table table-sm table-bordered table-striped">
+         <table id="teybol" class="table table-sm table-bordered table-striped">
             <center>
                <h5>Carmelite Tasking</h5>
                <h6>April 8 - 17, 2019</h6>
             </center>
             <br><br>
             <button id="shuffle" class="btn btn-info btn-md" style="margin-bottom: 2%; width: 15%;">Shuffle Students</button>
-            <button id="download" class="btn btn-warning btn-md" style="margin-bottom: 2%; width: 8%; float: right;">Download</button>
+            <button id="download" class="btn btn-warning btn-md" style="margin-bottom: 2%; width: 8%; float: right;">Print</button>
             <thead class="head">
                <tr>
                   <th style="width: 34%;">Kitchen Team</th>
